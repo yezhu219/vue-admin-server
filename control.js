@@ -1,7 +1,8 @@
 const con = require('./db')
 
 module.exports = {
-  index: (req, res) => {
-    res.send("ceshi")
+  login: (req, res) => {
+    console.log(req.body.username, req.body.password)
+
   }
 }

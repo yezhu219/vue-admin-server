@@ -3,7 +3,7 @@ const router = express.Router()
 
 const ctr = require('./control')
 
-router.get('/', ctr.index)
+router.post('/login', ctr.login)
 
 
 module.exports = router
