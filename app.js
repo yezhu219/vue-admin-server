@@ -10,12 +10,14 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({
   extended: false
 }))
-app.all('', function (req, res, next) {
-  res.header('Access - Control - Allow - Origin', '');
-  res.header('Access - Control - Allow - Headers', 'X - Requested - With, Content - Type');
-  res.header('Access - Control - Allow - Methods', 'PUT, POST, GET, DELETE, OPTIONS');
-  next();
-});
+
+
+// app.all('', function (req, res, next) {
+//   res.header('Access - Control - Allow - Origin', '');
+//   res.header('Access - Control - Allow - Headers', 'X - Requested - With, Content - Type');
+//   res.header('Access - Control - Allow - Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+//   next();
+// });
 
 //导入路由
 const router = require('./router')
